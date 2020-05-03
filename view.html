@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block main %}
+
+  <p>Use the <a href="/deck/">Decklist Sharing Tool</a> to share decklists with other Magic the Gathering players!</p>
+  
+<h3>{{ decklist.title|escape }}</h3>
+<p>Posted by by {{ decklist.author_nick }} on {{ decklist.date|date:"D d M Y" }} as a deck for {{ decklist.format_desc }}  </p>
+
+{{ decklist.render }}
+<p>Share this decklist using the following url: <a href="{{ deck_url }}">{{ deck_url }}</a>
+or <a href="http://twitter.com/home?status=check out this deck: {{ deck_url }}">Tweet this decklist</a>
+</p>
+
+<p>You can also post this decklist to your blog by pasting the following code:
+<br/><input type="text" value="&lt;script src='{{ deck_js_url }}'&gt;&lt;/script&gt;" style='width: 80%' />
+<br/><small>You'll probably want to apply CSS to style it. The above works in Blogger, but some blog engines like Wordpress.com don't allow javascript >.<</small> 
+</p>
+  
+{% if your_deck %}
+<hr/>
+<p><b>This is your deck!</b> Because you're logged in to your google account, you can 
+<a href="#" onclick="document.getElementById('edit').style.display='block';">edit this deck</a></p>
+<div id="edit" style="display: none;">
+  <form action="/deck/upload/" method="post">
+  <p>Give your decklist a name (optional): 
+  <br/><input type="edit" name="title" value="{{ decklist.title }}" /></p>
+
+  <p>What format is this deck for? 
+  <br/>
+  <select name="format">
+    {% for fmt in fmt_codes %}
+	  <option value="{{ fmt.code }}" {% ifequal fmt.code decklist.format %}selected{% endifequal %}>{{ fmt.desc }}</option>
+	{% endfor %}
+  </select>
+  </p>
+  
+  <p>Paste the decklist contents into the box below:
+  <br /><textarea rows="15" cols="40" name="decklist">{{ decklist.raw_string }}</textarea>
+  <br/><small>supports Apprentice, MWS and MTGO text formats</small>
+  </p>
+  <input type="hidden" name="code" value="{{ decklist.code }}">
+  <input type="submit" />
+  </form>
+</div>
+{% endif %}
+  
+{% endblock %}

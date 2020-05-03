@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block main %}
+
+    <p>Use the <a href="/deck/">Decklist Sharing Tool</a> to share decklists with other Magic the Gathering players!</p>
+  <form action="/deck/upload/" method="post">
+  <p>Give your decklist a name (optional): 
+  <br/><input type="edit" name="title" /></p>
+
+  <p>What format is this deck for? 
+  <br/>
+  <select name="format">
+    {% for fmt in fmt_codes %}
+	  <option value="{{ fmt.code }}">{{ fmt.desc }}</option>
+	{% endfor %}
+  </select>
+  </p>
+  
+  <p>Paste the decklist contents into the box below:
+  <br /><textarea rows="15" cols="40" name="decklist"></textarea>
+  <br/><small>supports Apprentice, MWS and MTGO text formats</small>
+  </p>
+  <input type="submit" />
+  </form>
+  
+{% endblock %}

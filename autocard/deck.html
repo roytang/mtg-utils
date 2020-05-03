@@ -1,0 +1,20 @@
+<div class='decklist_wrap'>
+        <table width="100%" border="1">
+        <tr>
+        {% for col in cols %}
+            <td style="vertical-align: top">
+            {% for group in col %}
+            <ul class='decklist_group'>
+              {% if group.title %}
+              <li class='header'>{{ group.title }}</li>
+              {% endif %}
+              {% for card in group.cards %}
+              <li>{{ card.count }} <a href="http://magiccards.info/autocard.php?card={{ card.name }}">{{ card.name }}</a></li>
+              {% endfor %}
+            </ul>
+            {% endfor %}
+            </td>
+        {% endfor %}
+        </tr>
+        </table>
+</div>

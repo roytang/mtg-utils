@@ -1,0 +1,36 @@
+/*
+  Autocard
+*/
+.decklist {
+    border: 1px #87B83D solid;
+    background-color: #95c5f5;
+    clear: both;
+	font-size: 12px;
+}
+
+/*
+  Autocard
+*/
+.decklist {
+    clear: both;
+	font-size: 12px;
+}
+
+.decklist li {
+	list-style: none;
+}
+
+.decklist li.header {
+    font-weight: bold;
+}
+
+.decklist ul.decklist_group {
+    float: left;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 0;
+}
+
+.decklist_wrap table, .decklist_wrap td {
+	border: 1px black solid;
+}

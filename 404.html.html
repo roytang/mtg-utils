@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block main %}
+
+  <p>Use the <a href="http://mtg-utils.appspot.com/deck/">Decklist Sharing Tool</a> to share decklists with other MTG players!</p>
+  <form action="/deck/upload/" method="post">
+  <p>Give your decklist a name (optional): 
+  <br/><input type="edit" name="title" /></p>
+  
+  <p>Paste the decklist contents into the box below:
+  <br /><textarea rows="15" cols="40" name="decklist"></textarea>
+  </p>
+  <input type="submit" />
+  </form>
+  
+{% endblock %}
+  
+{% block side %}
+  <h3>Most recent decks:</h3>
+  <ol>
+  {% for deck in object_list %}
+<li><a href="/d/{{ deck.code }}">{{ deck.title }}</a> by {{ deck.author.nickname }}</li>
+{% endfor %}
+</ol>
+<h3>Other tools</h3>
+<ul>
+<li>Coming soon!</li>
+</ul>
+{% endblock %}

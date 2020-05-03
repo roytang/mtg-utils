@@ -1,0 +1,538 @@
+/*
+87B83D
+697c12
+*/
+
+
+body {
+    background: white url('/files/img/green.png') repeat-x;
+    color: black !important;
+	font-family:"Lucida Sans Unicode","Lucida Grande","Lucida Sans","Lucida",sans-serif;
+	font-size: 13px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: black !important;
+}
+
+#doc2 {
+    background: white  url('/files/img/green.png') repeat-x;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.sidebar {
+    background: #E7F3F7;
+}
+
+li ol, li ul {
+    margin: 0 1.5em 1.5em;
+}
+
+a {
+    color:#0066cc;
+    text-decoration:none;
+}
+
+a:hover, a:active, a:focus {
+    color:#0066cc;
+    text-decoration: underline;
+}
+
+/*
+  Header
+*/
+div.header1 {
+  color: white;
+  height: 50px;
+  float: left;
+}
+
+.header1 .title {
+  color:#0066cc;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #333333;
+  font-size: 14px;
+  font-style: italic;
+  clear: both;
+  display: block;
+}
+
+.hmenu {
+  float: right;
+}
+
+#ft {
+    background: #e7f3f7;
+    text-align: center;
+    font-size: 75%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.yui-g {
+  padding-top: 15px;
+}
+
+/* http://www.mis-algoritmos.com/2007/03/16/some-styles-for-your-pagination/ */
+div.pagination {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	text-align:right;
+	padding:4px 6px 4px 0;
+	background-color:#cecfce;
+	border-top:1px dotted #9c9a9c;
+	color:#313031;
+}
+
+div.pagination a {
+	font-weight:bold;
+	color:#0030ce;
+	text-decoration:underline;
+	padding:1px 3px 1px 3px;
+	margin:0 1px 0 1px;
+}
+
+div.pagination a:hover, div.pagination a:active {
+
+}
+div.pagination span.current {
+	padding:1px 2px 1px 2px;
+	color:#000;
+	background-color:#fff;
+}
+div.pagination span.disabled {
+	display:none;
+}
+
+/*
+  Navigation Menu
+*/
+#nav {
+  float: right;
+}
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    }
+#nav ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 11em;
+    }
+#nav ul li a {
+    float: left;
+    display: block;
+    width: 11em;
+    height: 3.5em;
+    line-height: 1.4em;
+    padding: 0.5em 1em .3em 0.5em;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    font-size: 10px;
+    }
+#nav ul li a strong {
+    display: block;
+    font-size: 12px;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    }
+#nav li a:hover {
+    background: #282828;
+    }
+
+ul.topmenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 1em;
+    padding-top: 12px;
+    font-size: 1em;
+    }
+ul.topmenu li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    }
+ul.topmenu li a {
+    float: left;
+    display: block;
+    margin: 0;
+    border: none;
+    padding-right: 1.5em;
+    }
+    
+    
+/*
+  post list
+*/
+.post-list div.entry {
+    clear: both;
+    padding: 0 0 5px !important;
+    margin: 0 0 5px !important;
+/*    border-bottom: 1px solid #87B83D; */
+}
+
+.entry-title, .entry-meta {
+    display: block;
+}
+
+#bd a {
+  color: #0066cc !important;
+}
+
+
+.post-list div.entry:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    overflow: hidden;
+    clear: both; 
+    visibility: hidden;
+}
+
+.post-list div.entry a { text-decoration: none; }
+
+.post-list div.entry a:hover { text-decoration: underline; }
+
+.post-list .entry-title {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.post-list .entry-meta {
+    font-size: 0.8em;
+}
+
+.post-list .post-body {
+    padding-left: 15px;
+}  
+
+.sourcetable pre {
+    font-size: 12px;
+}
+
+#archives .archive-subunit    {
+    border-top: 1px solid #999;
+    width: 132px;
+    float: left;
+}    
+
+#archives    h2    {
+    float: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: right;
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+    
+#archives    h2.year {
+    clear: both;
+    text-align: left;
+    padding: 40px 5px 10px 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+
+#archives    .archive-subunit    h2    span    {
+    font-size: 12px;
+}
+
+
+#archives    .archive-subunit    h2    {
+    float: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+
+#archives    h2    a    {
+    display: block;
+    padding: 7px 5px 12px 5px;
+}
+
+#archives    h2    a:hover,
+#archives    h2    a:active    {
+    display: block;
+    background-color: #E7F3F7;
+    text-decoration: none;
+}
+
+#archives    h2    span    {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    text-align: left;
+    text-transform: none;
+}
+
+
+div.comment {
+  padding-left: 5px;
+  border-top: 1px gray dashed;
+}
+
+div.comment_header {
+  border-right: 1px #697c12 dashed;
+  padding: 5px;
+  float: left;
+  width: 10em;
+  display: block;
+}
+
+div.comment_body {
+    padding: 5px;
+    float: left;
+    display: block;
+	width: 30em;
+}
+
+div.comment-spacer {
+  clear: both;
+  height: 15px;
+}
+
+.comments-instr {
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+
+ol li.single-post {
+    margin-bottom: 15px;
+}
+
+div.post-header{
+}
+
+.list-header {
+    background-color:#E7F3F7;    
+    padding: 3px;
+}
+
+.list-description {
+    font-style: italic;
+}
+
+
+/*
+  Some specific sidebar stuff
+ */
+
+img.profile {
+    padding: 2px;
+    float: left;
+}
+
+.widget {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    display: block;
+}
+
+.widget h2 {
+    display:block;
+    font-size:larger;
+    font-weight:bolder;
+    padding:3px 5px;
+    color: #bfbfbf;    
+    clear: both;
+}
+
+.widget ul, ol.post-list, ul.sidebar {
+	list-style: none;
+}
+
+
+/*
+  Autocard
+*/
+.decklist {
+    border: 1px #87B83D solid;
+    background-color: #95c5f5;
+    clear: both;
+	font-size: 12px;
+}
+
+.decklist li {
+	list-style: none;
+}
+
+.decklist li.header {
+    font-weight: bold;
+}
+
+.decklist ul.decklist_group {
+    float: left;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 0;
+}
+
+/*
+Syntax highlighting
+*/
+
+.sourcetable {
+    margin-bottom: 0;
+}
+
+.linenos {
+	background-color:#3E3E3E;
+	width: 12px;
+    color: white;
+}
+
+.highlight, .hl_wrap {
+    background: #95c5f5 none repeat scroll 0 0;
+}
+
+.hl_wrap {
+    overflow-x: auto;
+    width: 540px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.hll { background-color: #ffffcc }
+.c { color: #408080; font-style: italic } /* Comment */
+.err { border: 1px solid #FF0000 } /* Error */
+.k { color: #008000; font-weight: bold } /* Keyword */
+.o { color: #666666 } /* Operator */
+.cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.cp { color: #BC7A00 } /* Comment.Preproc */
+.c1 { color: #408080; font-style: italic } /* Comment.Single */
+.cs { color: #408080; font-style: italic } /* Comment.Special */
+.gd { color: #A00000 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #FF0000 } /* Generic.Error */
+.gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.gi { color: #00A000 } /* Generic.Inserted */
+.go { color: #808080 } /* Generic.Output */
+.gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.gt { color: #0040D0 } /* Generic.Traceback */
+.kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #008000 } /* Keyword.Pseudo */
+.kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #B00040 } /* Keyword.Type */
+.m { color: #666666 } /* Literal.Number */
+.s { color: #BA2121 } /* Literal.String */
+.na { color: #7D9029 } /* Name.Attribute */
+.nb { color: #008000 } /* Name.Builtin */
+.nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.no { color: #880000 } /* Name.Constant */
+.nd { color: #AA22FF } /* Name.Decorator */
+.ni { color: #999999; font-weight: bold } /* Name.Entity */
+.ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.nf { color: #0000FF } /* Name.Function */
+.nl { color: #A0A000 } /* Name.Label */
+.nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.nt { color: #008000; font-weight: bold } /* Name.Tag */
+.nv { color: #19177C } /* Name.Variable */
+.ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #666666 } /* Literal.Number.Float */
+.mh { color: #666666 } /* Literal.Number.Hex */
+.mi { color: #666666 } /* Literal.Number.Integer */
+.mo { color: #666666 } /* Literal.Number.Oct */
+.sb { color: #BA2121 } /* Literal.String.Backtick */
+.sc { color: #BA2121 } /* Literal.String.Char */
+.sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.s2 { color: #BA2121 } /* Literal.String.Double */
+.se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.sh { color: #BA2121 } /* Literal.String.Heredoc */
+.si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.sx { color: #008000 } /* Literal.String.Other */
+.sr { color: #BB6688 } /* Literal.String.Regex */
+.s1 { color: #BA2121 } /* Literal.String.Single */
+.ss { color: #19177C } /* Literal.String.Symbol */
+.bp { color: #008000 } /* Name.Builtin.Pseudo */
+.vc { color: #19177C } /* Name.Variable.Class */
+.vg { color: #19177C } /* Name.Variable.Global */
+.vi { color: #19177C } /* Name.Variable.Instance */
+.il { color: #666666 } /* Literal.Number.Integer.Long */
+
+
+/*
+Tag cloud
+*/
+#switcher a.current {
+    font-weight: bold;
+}
+
+.tag-cloud {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.tag-cloud .tag-count {
+    display: none;
+}
+
+.tag-cloud li {
+    display: inline;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.tag-cloud .tag-1 {
+    font-size: 1em;
+}
+.tag-cloud .tag-2 {
+    font-size: 1.2em;
+}
+.tag-cloud .tag-3 {
+    font-size: 1.4em;
+}
+.tag-cloud .tag-4 {
+    font-size: 1.6em;
+}
+
+/*
+Stream
+*/
+div.post-list .streamitem  table td div {
+    width: 540px;
+}
+
+.widget .streamitem {
+    font-size: 0.8em;
+}
+
+.streamitem  table {
+    margin: 0;
+    padding: 0;
+}
+
+.streamitem {
+    border-bottom: 1px green solid;
+}
+

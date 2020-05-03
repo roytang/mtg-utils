@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block main %}
+
+  <p>Use the <a href="/deck/">Decklist Sharing Tool</a> to share decklists with other Magic the Gathering players!</p>
+
+  <h3>Your created decks:</h3>
+  <ol>
+  {% for deck in my_decks %}
+<li><a href="{{ deck.url }}">{{ deck.title|escape }}</a> for {{ deck.format_desc }} posted on {{ deck.date|date:"D d M Y" }}</li>
+{% endfor %}
+</ol>
+  
+{% endblock %}

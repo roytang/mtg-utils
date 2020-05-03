@@ -1,0 +1,368 @@
+/*
+87B83D
+697c12
+*/
+
+
+body {
+	font-family:"Myriad Pro","Myriad Set","Myriad Apple",Myriad,Helvetica Nueue,Arial,Verdana,Sans-serif;
+	font-size: 13px;
+}
+
+#doc2 {
+}
+
+#hd, #bd, #ft {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#bd {
+    padding-top: 8px;
+}
+
+li ol, li ul {
+    margin: 0 1.5em 1.5em;
+}
+
+a {
+    text-decoration:none;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: underline;
+}
+
+/*
+  Header
+*/
+
+#hd {
+  height: 88px;
+}
+
+div.header1 {
+  height: 50px;
+  float: left;
+}
+
+.header1 .title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-style: italic;
+  clear: both;
+  display: block;
+}
+
+.hmenu {
+  float: right;
+}
+
+#ft {
+    text-align: center;
+    font-size: 75%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.yui-g {
+  padding-top: 15px;
+}
+
+/*
+  Navigation Menu
+*/
+#nav {
+  float: right;
+}
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    }
+#nav ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 11em;
+    }
+#nav ul li a {
+    float: left;
+    display: block;
+    width: 11em;
+    height: 3.5em;
+    line-height: 1.4em;
+    padding: 0.5em 1em .3em 0.5em;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    font-size: 10px;
+    }
+#nav ul li a strong {
+    display: block;
+    font-size: 12px;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    }
+
+ul.topmenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 1em;
+    padding-top: 12px;
+    font-size: 1em;
+    }
+ul.topmenu li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    }
+ul.topmenu li a {
+    float: left;
+    display: block;
+    margin: 0;
+    border: none;
+    padding-right: 1.5em;
+    }
+    
+    
+/*
+  post list
+*/
+.post-list div.entry {
+    clear: both;
+    padding: 0 0 5px !important;
+    margin: 0 0 5px !important;
+/*    border-bottom: 1px solid #87B83D; */
+}
+
+.entry-title, .entry-meta {
+    display: block;
+}
+
+
+.post-list div.entry:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    overflow: hidden;
+    clear: both; 
+    visibility: hidden;
+}
+
+.post-list div.entry a { text-decoration: none; }
+
+.post-list div.entry a:hover { text-decoration: underline; }
+
+.post-list .entry-title {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.post-list .entry-meta {
+    font-size: 0.8em;
+}
+
+.post-list .post-body {
+    padding-left: 15px;
+}  
+
+.sourcetable pre {
+    font-size: 12px;
+}
+
+#archives .archive-subunit    {
+    width: 132px;
+    float: left;
+}    
+
+#archives    h2    {
+    float: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: right;
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+    
+#archives    h2.year {
+    clear: both;
+    text-align: left;
+    padding: 40px 5px 10px 5px;
+    font-size: 12px;
+}
+
+
+#archives    .archive-subunit    h2    span    {
+    font-size: 12px;
+}
+
+
+#archives    .archive-subunit    h2    {
+    float: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+
+#archives    h2    a    {
+    display: block;
+    padding: 7px 5px 12px 5px;
+}
+
+#archives    h2    a:hover,
+#archives    h2    a:active    {
+    display: block;
+    text-decoration: none;
+}
+
+#archives    h2    span    {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    text-align: left;
+    text-transform: none;
+}
+
+ol li.single-post {
+    margin-bottom: 15px;
+}
+
+div.post-header{
+}
+
+.list-header {
+    padding: 3px;
+}
+
+.list-description {
+    font-style: italic;
+}
+
+
+/*
+  Some specific sidebar stuff
+ */
+
+img.profile {
+    padding: 2px;
+    float: left;
+}
+
+.widget {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    display: block;
+}
+
+.widget h2 {
+    display:block;
+    font-size:larger;
+    font-weight:bolder;
+    padding:3px 5px;
+    clear: both;
+}
+
+.widget ul, ol.post-list, ul.sidebar {
+	list-style: none;
+}
+
+
+/*
+  Autocard
+*/
+.decklist {
+    clear: both;
+	font-size: 12px;
+}
+
+.decklist li {
+	list-style: none;
+}
+
+.decklist li.header {
+    font-weight: bold;
+}
+
+.decklist ul.decklist_group {
+    float: left;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 0;
+}
+
+/*
+Tag cloud
+*/
+#switcher a.current {
+    font-weight: bold;
+}
+
+.tag-cloud {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.tag-cloud .tag-count {
+    display: none;
+}
+
+.tag-cloud li {
+    display: inline;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.tag-cloud .tag-1 {
+    font-size: 1em;
+}
+.tag-cloud .tag-2 {
+    font-size: 1.2em;
+}
+.tag-cloud .tag-3 {
+    font-size: 1.4em;
+}
+.tag-cloud .tag-4 {
+    font-size: 1.6em;
+}
+
+/*
+Stream
+*/
+div.post-list .streamitem  table td div {
+    width: 540px;
+}
+
+.widget .streamitem {
+    font-size: 0.8em;
+}
+
+.streamitem  table {
+    margin: 0;
+    padding: 0;
+}
+
+.comment_header {
+  width: 75px;
+  float: left;
+  padding: 8px;
+}
